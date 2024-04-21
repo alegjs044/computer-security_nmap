@@ -20,7 +20,7 @@ def main():
     target = input("Host/IP: ").strip()
     ports = input("Port(s): ").strip()
     arguments = input("nmap arguments (-sn, -SP): ").strip()
-    use_sudo = input("¿Ejecutar como super usuario?(y/n): ").strip().lower() in ["y", "yes", "Y"]
+    use_sudo = input("¿Ejecutar como super usuario?(y/n): ").strip().lower() in ["y", "yes"]
 
     try:
         ports = ",".join([p.strip() for p in ports.split(',')])
